@@ -180,7 +180,7 @@ public class FillableLoader: UIView {
     internal func initialSetup(view: UIView? = nil) {
         //Setting up frame
         var window = view
-        if view == nil, let mainWindow = UIApplication.sharedApplication().delegate?.window {
+        if view == nil, let mainWindow = UIApplication.sharedApplication().keyWindow {
             window = mainWindow
         }
         guard let w = window else { return }
