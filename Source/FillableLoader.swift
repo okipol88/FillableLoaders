@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FillableLoader: UIView {
+public class FillableLoader: UIView, CAAnimationDelegate {
     internal var shapeLayer = CAShapeLayer()
     internal var strokeLayer = CAShapeLayer()
     internal var path: CGPath!
@@ -342,7 +342,6 @@ public class FillableLoader: UIView {
     internal func randomAngle() -> Double {
         return M_PI_4/(Double(arc4random_uniform(16)) + 8)
     }
-    
     
     //MARK: Abstract methods
     
